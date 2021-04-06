@@ -1,4 +1,3 @@
-let user_name_room = "" ;
 
 function change()
 {

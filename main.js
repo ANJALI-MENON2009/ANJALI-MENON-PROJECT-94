@@ -18,8 +18,7 @@ function addUser()
     firebase.database().ref("/").child(user_name).update({
         purpose: "add user" 
     }) ;
-    user_name_now = localStorage.getItem("User name") ; 
-    document.getElementById("welcome_tag").innerHTML = "Welcome" + user_name_now + "!" ;
+    
 }
 
 height = window.height;
