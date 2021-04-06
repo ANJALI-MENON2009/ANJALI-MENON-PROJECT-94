@@ -1,0 +1,21 @@
+body {
+    background-color: black ;   
+}
+.header_room img {
+    width: 140px;margin-right: -8px;
+}
+#room_name_input {
+    width:50%;
+    font-size:23px;
+    padding:10px;
+}
+#logout_btn
+ { 
+     font-size: 20px; float: right;
+ }
+ .header_room
+{
+	color: white;font-family: 'Reggae One', cursive; font-size: 45px; letter-spacing: 5px;margin-top: 50px; margin-left:50px; 
+}
+/*background-repeat: no-repeat; */
+  /* background-size: cover; */

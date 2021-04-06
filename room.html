@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Let's Chat Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="room.css">
+<script src="room.js"></script>
+</head>
+<body>
+    <div class="container">
+       <div>
+
+      <br>
+        <button id="logout_btn" style="font-size:20px; background-color:deeppink; color:black; border-radius: 10px; font-weight:800; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; border:0px; padding:10px;" onclick="logout()" > LOGOUT <i class="fa fa-sign-out" ></i></button>
+    </div>
+        <br>
+   <center>
+       <br>
+    <h3 class="color_white" id="welcome_tag" style= "color:whitesmoke;">  </h3>
+ <br>   <h1 class="header_room" id="heading" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: yellow;" onmouseover="change()" onmouseout="normal()">	
+        Let's Chat!	
+        <sup>
+            <img src="notify.gif">
+        </sup>
+    </h1>
+
+    <div class="form-group input_div_room_page">
+        <br> 
+        <label id="add_room_lbl" style="font-size:24px; color:red; font-family:Verdana, Geneva, Tahoma, sans-serif; font-style:italic; font-variant: unset;">Add Room:</label> 
+        <br> <br>
+        <input id="room_name_input" class="form-control" placeholder="Enter room name" style="font-family: 'Teko', sans-serif; color:black"> 
+    </div> <br> 
+    <button class="btn btn-warning" style="border-radius: 0px; border:2px solid black; color:darkred; font-variant: small-caps; font-weight: 900;" onclick="addRoom()">Add Room</button>
+  <br> <br>  <h3 class="color_white" style="font-weight:bold;display:none ;font-family: 'Great Vibes', cursive; ;color:rgb(243, 7, 77)">#TrendingRooms</h3>
+  <br>
+  <div id="output">  </div>
+
+</center>
+    </div>
+</body>
